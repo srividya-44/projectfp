@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>QR Attendance</title>
+<link rel="stylesheet" href="../css/style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="../js/qr.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Generate QR Attendance</h2>
+
+<label>Class Information</label>
+<input type="text" id="qrText" placeholder="Example: CSE-DS-10AM">
+<button onclick="generateQR()">Generate QR</button>
+
+<div id="qrcode"></div>
+
+<p id="timer"></p>
+
+<br><br>
+
+<div id="qrcode"></div>
+
+</div>
+
+</body>
+</html>

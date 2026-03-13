@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Smart Attendance System - Register</title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Register</h2>
+
+<form onsubmit="return validateRegister()">
+
+<label>Name</label>
+<input type="text" id="name" placeholder="Enter Name">
+<p class="error" id="nameError"></p>
+
+<label>Email</label>
+<input type="text" id="email" placeholder="Enter Email">
+<p class="error" id="emailError"></p>
+
+<label>Password</label>
+
+<div class="password-box">
+<input type="password" id="password" placeholder="Enter Password">
+<span class="eye" onclick="togglePassword()">👁</span>
+</div>
+
+<p class="error" id="passwordError"></p>
+
+<label>Role</label>
+<select id="role">
+<option value="">Select Role</option>
+<option value="admin">Admin</option>
+<option value="faculty">Faculty</option>
+<option value="deo">DEO</option>
+</select>
+
+<p class="error" id="roleError"></p>
+
+<button type="submit">Register</button>
+
+<p class="link">
+Already have an account?
+<a href="login.html">Login</a>
+</p>
+
+</form>
+
+</div>
+
+<script src="js/auth.js"></script>
+</body>
+</html>
